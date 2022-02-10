@@ -37,6 +37,8 @@ List of features:
 - An About page
 - Individual page for every article
 - NJK templating
+- Portfolio
+- Individual page for each project
 
 To-do list:
 

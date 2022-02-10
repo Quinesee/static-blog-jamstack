@@ -1,0 +1,14 @@
+---
+layout: "base"
+title: "All Projects"
+---
+
+<div class="section container">
+  <h1 class="section-title">Portfolio</h1>
+
+  <div class="project-grid">
+    {% for project in collections.projects %}
+    {% include "project-grid-snippet.njk" %}
+    {% endfor %}
+  </div>
+</div>

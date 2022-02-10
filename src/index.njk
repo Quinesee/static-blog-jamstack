@@ -33,3 +33,16 @@ title: "Home"
     </ul>
   </div>
 </section>
+
+<section id="featured-projects" class="featured-projects">
+  <div class="container flow">
+    <h2 class="section-title text-center ">Featured projects</h2>
+    <p class="text-center">Here is a sample of projects which I feel give you a good idea of what this site is all
+      about.</p>
+    <div class="project-grid">
+      {% for project in collections.featuredWork %}
+      {% include "project-grid-snippet.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

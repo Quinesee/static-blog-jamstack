@@ -1,0 +1,16 @@
+---
+layout: "base"
+---
+
+<article class="main-portfolio">
+  <div class="container container--narrow flow">
+    <h1 class="portfolio-title">{{ title }}</h1>
+    <figure class="main-portfolio__figure">
+      <img src="{{ image }}" alt="{{ imageAlt }}" />
+      <figcaption>{{ imageAlt }}</figcaption>
+    </figure>
+    <div class="project-info">
+      {{ content | safe }}
+    </div>
+  </div>
+</article>

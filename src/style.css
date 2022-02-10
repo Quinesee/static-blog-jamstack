@@ -142,8 +142,6 @@ section,
   padding: min(10vh, 10em) 0;
 }
 
-
-
 /* //////////////////////
   Utility Classes
   /////////////////////// */
@@ -179,18 +177,19 @@ section,
 /* typgraphy */
 
 .article-title,
-.section-title {
+.section-title,
+.portfolio-title {
   color: var(--clr-primary-500);
 }
 
-.article-title {
+.article-title,
+.portfolio-title {
   font-size: var(--fs-700);
 }
 
 .section-title {
   font-size: var(--fs-600);
 }
-
 
 /* //////////////////////
   Header
@@ -270,15 +269,16 @@ section,
   Individual article page
   /////////////////////// */
 
-  .main-article {
-    margin-bottom: 3rem;
-  }
+.main-article {
+  margin-bottom: 3rem;
+}
 
-  .main-article__figure figcaption {
-    margin: 1rem 0;
-    font-size: var(--fs-300);
-    opacity: .9;
-  }
+.main-article__figure figcaption {
+  margin: 1rem 0;
+  font-size: var(--fs-300);
+  text-align: center;
+  opacity: 0.9;
+}
 
 /* //////////////////////
   Article snippets
@@ -330,7 +330,7 @@ section,
 .snippet__title a:hover,
 .snippet__title a:focus {
   color: var(--clr-primary-500);
-} 
+}
 
 @media (min-width: 45em) {
   .snippet {
@@ -370,7 +370,7 @@ section,
 .btn--primary:hover,
 .btn--primary:focus {
   background: var(--clr-primary-500);
-  border-color: var(--clr-primary-500); 
+  border-color: var(--clr-primary-500);
 }
 
 .btn--neutral {
@@ -384,4 +384,63 @@ section,
 .btn--neutral:focus {
   color: var(--clr-neutral-100);
   background-color: var(--clr-neutral-900);
+}
+
+/* //////////////////////
+  Portfolio
+  /////////////////////// */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.project-grid__project {
+  display: grid;
+  place-items: center;
+}
+
+.project-grid__project a {
+  color: var(--clr-neutral-900);
+  display: block;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.project-grid__project h3 {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 45em) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.project-info img {
+  margin: 2rem auto;
+  width: 50%;
+}
+
+/* //////////////////////
+  Individual portfolio page
+  /////////////////////// */
+
+.main-portfolio {
+  margin-bottom: 3rem;
+}
+
+.main-portfolio__figure figcaption {
+  margin: 1rem 0;
+  font-size: var(--fs-300);
+  text-align: center;
+  opacity: 0.9;
+}
+
+.main-portfolio .project-info p {
+  margin: 1rem 0;
 }
