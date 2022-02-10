@@ -39,10 +39,10 @@ List of features:
 - NJK templating
 - Portfolio
 - Individual page for each project
+- Hosting - Netlify - https://angry-babbage-a58f75.netlify.app/
 
 To-do list:
 
-- Hosting
 - CMS
 
 ## Status
