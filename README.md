@@ -40,11 +40,10 @@ List of features:
 - Portfolio
 - Individual page for each project
 - Hosting - Netlify - https://angry-babbage-a58f75.netlify.app/
+- CMS - Netlify CMS
 
 To-do list:
 
-- CMS
-
 ## Status
 
-Project is: _in progress_
+Project is: _complete_
